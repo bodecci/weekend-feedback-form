@@ -36,7 +36,6 @@ class Feelings extends Component {
 
     render(){
         return (
-            <div>
                 <Grid container justify="center">
                     <Grid item xs={6}>
                         <Card>
@@ -57,7 +56,6 @@ class Feelings extends Component {
                         </Card>
                     </Grid>
                 </Grid>
-            </div>
 
         )
     }
