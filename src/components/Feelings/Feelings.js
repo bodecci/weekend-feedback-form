@@ -36,6 +36,8 @@ class Feelings extends Component {
 
     render(){
         return (
+        
+            <div>
                 <Grid container justify="center">
                     <Grid item xs={6}>
                         <Card>
@@ -56,10 +58,23 @@ class Feelings extends Component {
                         </Card>
                     </Grid>
                 </Grid>
+                <br></br>
+                <br></br>
+                <h1>Review Your Feedback</h1>
+                <br></br>
+                <p>Feeling: {this.state.feelings}</p>
+                <p>Understanding: </p>
+                <p>Support: </p>
+                <p>Comments: </p>
+            </div>
 
         )
     }
 
 }
 
-export default connect() (Feelings);
+const mapStateToProps = (reduxStore) => ({
+    reduxStore: reduxStore
+})
+
+export default connect(mapStateToProps)(Feelings);
