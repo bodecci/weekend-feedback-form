@@ -39,7 +39,7 @@ constructor(props){
                         <Card>
                             <h1>Support</h1>
                             <Grid container justify="center" alignItems="center">
-                            <Grid item xs={9}>
+                            <Grid item xs={10}>
                             <TextField
                             id="name"
                             label="Do You Feel Support?"

@@ -43,7 +43,7 @@ class Comments extends Component {
                         <Card>
                             <h1>Comments</h1>
                             <Grid container justify="center" alignItems="center">
-                            <Grid item xs={9}>
+                            <Grid item xs={10}>
                             <TextField
                             id="name"
                             label="Any Comment?"
