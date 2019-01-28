@@ -15,7 +15,7 @@ constructor(props){
 
     // change the value of support to what the user entered
     handleChange = (event) => {
-        console.log('value is: ', event.target.value);
+        console.log('value of support is: ', event.target.value);
         this.setState({
             support: event.target.value
         })

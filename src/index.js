@@ -23,7 +23,7 @@ let initialFeedback = {
 }
 
 // setup reducers
-const feedback = (state = initialFeedback, action) => {
+const feedbackReducer = (state = initialFeedback, action) => {
     switch (action.type) {
         case 'SET_FEELING':
             return {...state, feeling: action.payload}
@@ -43,7 +43,7 @@ const feedback = (state = initialFeedback, action) => {
 
 const storeInstance = createStore(
     combineReducers({
-        feedback
+        feedbackReducer
     }),
     applyMiddleware(logger),
 );
