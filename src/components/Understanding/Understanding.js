@@ -58,6 +58,7 @@ class Understanding extends Component {
                 </Grid>
                 <br></br>
                 <br></br>
+                {/* Review Feedback shown to user */}
                 <h1>Review Your Feedback</h1>
                 
                 <p>Feeling: {this.props.reduxStore.feedbackReducer.feeling}</p>

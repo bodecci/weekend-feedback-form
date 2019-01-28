@@ -62,7 +62,7 @@ class ReviewComments extends Component{
         return(
             <div>
                 <h1>Review Your Feedback</h1>
-            
+                {/* Review of feedback shown. All values are from the redux store */}
                 {/* {JSON.stringify(this.props.reduxStore)} */}
                 <p>Feeling: {this.props.reduxStore.feedbackReducer.feeling}</p>
                 <p>Understanding: {this.props.reduxStore.feedbackReducer.understanding}</p>
