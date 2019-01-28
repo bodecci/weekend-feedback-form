@@ -61,13 +61,13 @@ class Feelings extends Component {
                 <br></br>
                 <br></br>
                 <h1>Review Your Feedback</h1>
+                {JSON.stringify(this.props.reduxStore)}
                 <br></br>
                 <p>Feeling: {this.state.feelings}</p>
-                <p>Understanding: </p>
-                <p>Support: </p>
-                <p>Comments: </p>
+                <p>Understanding: {this.props.reduxStore.feedbackReducer.understanding}</p>
+                <p>Support: {this.props.reduxStore.feedbackReducer.support}</p>
+                <p>Comments: {this.props.reduxStore.feedbackReducer.comments}</p>
             </div>
-
         )
     }
 

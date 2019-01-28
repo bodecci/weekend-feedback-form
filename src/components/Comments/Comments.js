@@ -37,6 +37,7 @@ class Comments extends Component {
 
     render(){
         return (
+            <div>
                 <Grid container justify="center">
                     <Grid item xs={6}>
                         <Card>
@@ -57,10 +58,23 @@ class Comments extends Component {
                         </Card>
                     </Grid>
                 </Grid>
+                <br></br>
+                <br></br>
+                <h1>Review Your Feedback</h1>
+                <br></br>
+                <p>Feeling: {this.props.reduxStore.feedbackReducer.feeling}</p>
+                <p>Understanding: {this.props.reduxStore.feedbackReducer.understanding}</p>
+                <p>Support: {this.props.reduxStore.feedbackReducer.support}</p>
+                <p>Comments: {this.state.comments}</p>
+            </div>
 
         )
     }
 
 }
 
-export default connect() (Comments);
+const mapStateToProps = (reduxStore) => ({
+    reduxStore: reduxStore
+})
+
+export default connect(mapStateToProps)(Comments);
