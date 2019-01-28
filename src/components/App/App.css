@@ -17,3 +17,7 @@
   font-size: large;
 }
 
+.gridContainer{
+  align-items: center;
+  justify-items: center;
+}
