@@ -33,6 +33,7 @@ constructor(props){
 
     render(){
         return (
+            <div>
                 <Grid container justify="center">
                     <Grid item xs={6}>
                         <Card>
@@ -54,9 +55,23 @@ constructor(props){
                     </Grid>
                 </Grid>
 
+                <br></br>
+                <br></br>
+                <h1>Review Your Feedback</h1>
+                
+                <p>Feeling: {this.props.reduxStore.feedbackReducer.feeling}</p>
+                <p>Understanding: {this.props.reduxStore.feedbackReducer.understanding}</p>
+                <p>Support: {this.state.support}</p>
+                <p>Comments: {this.props.reduxStore.feedbackReducer.comment}</p>
+                </div>
+
         )
     }
 
 }
 
-export default connect() (Support);
+const mapStateToProps = (reduxStore) => ({
+    reduxStore: reduxStore
+})
+
+export default connect(mapStateToProps)(Support);
