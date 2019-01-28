@@ -29,12 +29,13 @@ class ReviewComments extends Component{
             comments: this.props.reduxStore.feedbackReducer.comments
         }
         console.log('submit clicked');
+        this.props.history.push('/thank-you');
         axios({
             method: 'POST',
             url: '/feedback',
             data: feedback
         }).then((response) => {
-
+            
         }).catch((error) => {
             alert('Something Went Wrong in POST! ', error);
         });
