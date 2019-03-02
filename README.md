@@ -1,4 +1,4 @@
-#Redux Feedback Form
+# Redux Feedback Form
 This is an application that lets you enter your feedback daily. It saves it and shows you a review of the feedback immediately.
 The feedback is not submitted if the form is not filled properly.
 
