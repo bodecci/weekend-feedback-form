@@ -40,4 +40,4 @@ PostgresSQL
 Material UI
 CSS
 
-![](public/feedBackForm.gif)
+![](public/images/feedBackForm.gif)
