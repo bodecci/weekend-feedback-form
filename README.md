@@ -31,7 +31,7 @@ This is where the applicatin checks to make sure the form was propery filled. If
 
 
 ## TECHNOLOGY USED
-## Technolgies used:
+
 React
 Redux
 JavaScript
@@ -39,5 +39,8 @@ axios
 PostgresSQL
 Material UI
 CSS
+
+
+## APPLICATION DEMO
 
 ![](public/images/feedBackForm.gif)
